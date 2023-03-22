@@ -1,3 +1,5 @@
-export default function Signin() {
-    return <p>Signin</p>
+import AuthForm from "@/components/AuthForm";
+
+export default function Register() {
+    return <AuthForm mode="signin" />;
 }

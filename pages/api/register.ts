@@ -8,6 +8,7 @@ export default async function register(
   res: NextApiResponse
 ) {
   if (req.method === "POST") {
+    console.log("POSTING");
     const user = await db.user.create({
       data: {
         email: req.body.email,
